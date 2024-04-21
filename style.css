@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    --ff-serif: "Young Serif", serif;
+    --ff-ss: "Outfit", sans-serif;
+    ;
+
+    --clr-primary-100: hsl(14, 45%, 36%);
+    --clr-primary-200: hsl(332, 51%, 32%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(330, 100%, 98%);
+    --clr-neutral-300: hsl(30, 54%, 90%);
+    --clr-neutral-400: hsl(30, 18%, 87%);
+    --clr-neutral-500: hsl(30, 10%, 34%);
+    --clr-neutral-600: hsl(24, 5%, 18%);
+    /* color: #83807D; */
+}
+
+body {
+    display: grid;
+    place-items: center;
+
+    font-family: var(--ff-ss);
+    background-color: var(--clr-neutral-300);
+    color: var(--clr-neutral-600);
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul>*,
+ol>* {
+    margin-top: .7rem;
+    padding-left: 1rem;
+}
+
+ol li::marker{
+    font-weight: var(--fw-semibold);
+    color: var(--clr-neutral-500);
+}
+
+ol li{
+    max-width: 60ch;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    border: 1px solid var(--clr-neutral-400);
+}
+
+.mt-lg {
+    margin-top: 2rem;
+}
+
+.mt-sm {
+    margin-top: 1rem;
+}
+
+.ml-lg {
+    margin-left: 1.75rem;
+}
+
+.ml-sm {
+    margin-left: 1.5rem;
+}
+
+.py-lg {
+    padding-block: 1.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 2rem;
+
+    border-radius: 20px;
+    background-color: var(--clr-neutral-100);
+}
+
+
+.card-img {
+    max-width: 100%;
+    align-self: center;
+    border-radius: 15px;
+}
+
+.card-title {
+    font-weight: var(--fw-bold);
+    font-family: var(--ff-serif);
+}
+
+.card-des{
+    max-width: 55ch;
+}
+
+.card-duration {
+
+    padding: 1rem 2rem;
+
+    border-radius: 5px;
+    background-color: var(--clr-neutral-200);
+}
+
+.card-duration--title {
+    color: var(--clr-primary-200);
+    font-weight: var(--fw-bold);
+}
+
+.card-heading {
+    font-family: var(--ff-serif);
+    color: var(--clr-neutral-600);
+}
+
+.card-nutrition--table {
+    width: 100%;
+    margin-inline: auto;
+    color: var(--clr-neutral-500);
+    border-collapse: collapse;
+    /* text-align: center; */
+}
+
+tbody {
+    padding-left: 1rem;
+    width: fit-content;
+    /* vertical-align: middle; */
+}
+
+tr {
+    margin-left: 5rem;
+    height: 3rem;
+    
+    border: solid;
+    border-width: 1px 0;
+}
+
+tr:first-child {
+    border-top: 0px;
+}
+
+tr:last-child {
+    border-bottom: 0px;
+}
+
+.border {
+    border-top: 1px solid var(--clr-neutral-600);
+}
+
+.card-subtitle {
+    font-weight: var(--fw-semibold);
+    color: var(--clr-neutral-500);
+}
